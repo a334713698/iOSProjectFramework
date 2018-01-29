@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8866D02DE46EFF43DDDAFE99 /* libPods-iOSProjectFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF64C99AC489725090F26D7 /* libPods-iOSProjectFramework.a */; };
+		B6B9548A201EEC2900D24F3C /* UILabel+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B95489201EEC2900D24F3C /* UILabel+Builder.m */; };
 		B6E26A5E201AF2A0006C7650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E26A5D201AF2A0006C7650 /* AppDelegate.m */; };
 		B6E26A64201AF2A0006C7650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E26A62201AF2A0006C7650 /* Main.storyboard */; };
 		B6E26A66201AF2A0006C7650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E26A65201AF2A0006C7650 /* Assets.xcassets */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		2412AEA92032584BCA54A4D1 /* Pods-iOSProjectFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectFramework/Pods-iOSProjectFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		4FF64C99AC489725090F26D7 /* libPods-iOSProjectFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProjectFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B95488201EEC2900D24F3C /* UILabel+Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Builder.h"; sourceTree = "<group>"; };
+		B6B95489201EEC2900D24F3C /* UILabel+Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Builder.m"; sourceTree = "<group>"; };
 		B6E26A59201AF2A0006C7650 /* iOSProjectFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProjectFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E26A5C201AF2A0006C7650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6E26A5D201AF2A0006C7650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +79,23 @@
 				4FF64C99AC489725090F26D7 /* libPods-iOSProjectFramework.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6B95483201EEBAC00D24F3C /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				B6B95487201EEC1A00D24F3C /* UILabel+Builder */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		B6B95487201EEC1A00D24F3C /* UILabel+Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B6B95488201EEC2900D24F3C /* UILabel+Builder.h */,
+				B6B95489201EEC2900D24F3C /* UILabel+Builder.m */,
+			);
+			path = "UILabel+Builder";
 			sourceTree = "<group>";
 		};
 		B6E26A50201AF2A0006C7650 = {
@@ -138,8 +158,8 @@
 		B6E26A78201AF3F2006C7650 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6E26A79201AF3F2006C7650 /* ViewController.m */,
 				B6E26A7A201AF3F2006C7650 /* ViewController.h */,
+				B6E26A79201AF3F2006C7650 /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +198,7 @@
 		B6E26A7F201AF3F2006C7650 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B6B95483201EEBAC00D24F3C /* UILabel */,
 				B6E26A80201AF3F2006C7650 /* UIView */,
 			);
 			path = Category;
@@ -211,8 +232,8 @@
 		B6E26A85201AF3F2006C7650 /* HDJEmptyView */ = {
 			isa = PBXGroup;
 			children = (
-				B6E26A86201AF3F2006C7650 /* HDJEmptyView.m */,
 				B6E26A87201AF3F2006C7650 /* HDJEmptyView.h */,
+				B6E26A86201AF3F2006C7650 /* HDJEmptyView.m */,
 			);
 			path = HDJEmptyView;
 			sourceTree = "<group>";
@@ -246,8 +267,8 @@
 		B6E26A8B201AF3F2006C7650 /* BaseNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				B6E26A8C201AF3F2006C7650 /* BaseNavigationController.m */,
 				B6E26A8D201AF3F2006C7650 /* BaseNavigationController.h */,
+				B6E26A8C201AF3F2006C7650 /* BaseNavigationController.m */,
 			);
 			path = BaseNavigationController;
 			sourceTree = "<group>";
@@ -255,8 +276,8 @@
 		B6E26A8E201AF3F2006C7650 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				B6E26A8F201AF3F2006C7650 /* BaseView.m */,
 				B6E26A90201AF3F2006C7650 /* BaseView.h */,
+				B6E26A8F201AF3F2006C7650 /* BaseView.m */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -273,8 +294,8 @@
 		B6E26A94201AF3F2006C7650 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B6E26A95201AF3F2006C7650 /* BaseViewController.m */,
 				B6E26A96201AF3F2006C7650 /* BaseViewController.h */,
+				B6E26A95201AF3F2006C7650 /* BaseViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -282,8 +303,8 @@
 		B6E26A97201AF3F2006C7650 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				B6E26A98201AF3F2006C7650 /* BaseModel.m */,
 				B6E26A99201AF3F2006C7650 /* BaseModel.h */,
+				B6E26A98201AF3F2006C7650 /* BaseModel.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -440,6 +461,7 @@
 				B6E26A9E201AF3F2006C7650 /* BaseView.m in Sources */,
 				B6E26A6C201AF2A0006C7650 /* main.m in Sources */,
 				B6E26A9C201AF3F2006C7650 /* HDJEmptyView.m in Sources */,
+				B6B9548A201EEC2900D24F3C /* UILabel+Builder.m in Sources */,
 				B6E26A9F201AF3F2006C7650 /* BaseNetRequest.m in Sources */,
 				B6E26A9A201AF3F2006C7650 /* ViewController.m in Sources */,
 				B6E26A5E201AF2A0006C7650 /* AppDelegate.m in Sources */,

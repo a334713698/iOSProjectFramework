@@ -32,5 +32,6 @@
 
 //Category
 #import "UIView+Extension.h"
+#import "UILabel+Builder.h"
 
 #endif /* ProjectPrefix_pch */
