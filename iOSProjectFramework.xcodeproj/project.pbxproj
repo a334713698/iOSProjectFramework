@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8866D02DE46EFF43DDDAFE99 /* libPods-iOSProjectFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF64C99AC489725090F26D7 /* libPods-iOSProjectFramework.a */; };
+		B66110832045504700D648E9 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66110822045504700D648E9 /* BaseTabBarController.m */; };
+		B66110882045727000D648E9 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = B66110872045727000D648E9 /* UIButton+ImageTitleSpacing.m */; };
 		B6B9548A201EEC2900D24F3C /* UILabel+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B95489201EEC2900D24F3C /* UILabel+Builder.m */; };
 		B6E26A5E201AF2A0006C7650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E26A5D201AF2A0006C7650 /* AppDelegate.m */; };
 		B6E26A64201AF2A0006C7650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E26A62201AF2A0006C7650 /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 /* Begin PBXFileReference section */
 		2412AEA92032584BCA54A4D1 /* Pods-iOSProjectFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectFramework/Pods-iOSProjectFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		4FF64C99AC489725090F26D7 /* libPods-iOSProjectFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProjectFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66110812045504700D648E9 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		B66110822045504700D648E9 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		B66110862045727000D648E9 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		B66110872045727000D648E9 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		B6B95488201EEC2900D24F3C /* UILabel+Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Builder.h"; sourceTree = "<group>"; };
 		B6B95489201EEC2900D24F3C /* UILabel+Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Builder.m"; sourceTree = "<group>"; };
 		B6E26A59201AF2A0006C7650 /* iOSProjectFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProjectFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B661108020454CBA00D648E9 /* BaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				B66110812045504700D648E9 /* BaseTabBarController.h */,
+				B66110822045504700D648E9 /* BaseTabBarController.m */,
+			);
+			path = BaseTabBarController;
+			sourceTree = "<group>";
+		};
+		B66110842045725600D648E9 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				B66110852045727000D648E9 /* UIButton+ImageTitleSpacing */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		B66110852045727000D648E9 /* UIButton+ImageTitleSpacing */ = {
+			isa = PBXGroup;
+			children = (
+				B66110862045727000D648E9 /* UIButton+ImageTitleSpacing.h */,
+				B66110872045727000D648E9 /* UIButton+ImageTitleSpacing.m */,
+			);
+			path = "UIButton+ImageTitleSpacing";
+			sourceTree = "<group>";
+		};
 		B6B95483201EEBAC00D24F3C /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +156,8 @@
 				B6E26A89201AF3F2006C7650 /* Launch */,
 				B6E26A77201AF3F2006C7650 /* Main */,
 				B6E26A65201AF2A0006C7650 /* Assets.xcassets */,
+				B6E26A5C201AF2A0006C7650 /* AppDelegate.h */,
+				B6E26A5D201AF2A0006C7650 /* AppDelegate.m */,
 				B6E26A76201AF3D1006C7650 /* Supporting Files */,
 			);
 			path = iOSProjectFramework;
@@ -134,8 +168,6 @@
 			children = (
 				B6E26AA9201AF4A1006C7650 /* ProjectPrefix.pch */,
 				B6E26AA4201AF457006C7650 /* Config */,
-				B6E26A5C201AF2A0006C7650 /* AppDelegate.h */,
-				B6E26A5D201AF2A0006C7650 /* AppDelegate.m */,
 				B6E26A62201AF2A0006C7650 /* Main.storyboard */,
 				B6E26A67201AF2A0006C7650 /* LaunchScreen.storyboard */,
 				B6E26A6A201AF2A0006C7650 /* Info.plist */,
@@ -198,6 +230,7 @@
 		B6E26A7F201AF3F2006C7650 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B66110842045725600D648E9 /* UIButton */,
 				B6B95483201EEBAC00D24F3C /* UILabel */,
 				B6E26A80201AF3F2006C7650 /* UIView */,
 			);
@@ -255,6 +288,7 @@
 		B6E26A8A201AF3F2006C7650 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				B661108020454CBA00D648E9 /* BaseTabBarController */,
 				B6E26A8B201AF3F2006C7650 /* BaseNavigationController */,
 				B6E26A8E201AF3F2006C7650 /* BaseView */,
 				B6E26A91201AF3F2006C7650 /* BaseNetRequest */,
@@ -456,8 +490,10 @@
 			files = (
 				B6E26A9B201AF3F2006C7650 /* UIView+Extension.m in Sources */,
 				B6E26AA0201AF3F2006C7650 /* BaseViewController.m in Sources */,
+				B66110882045727000D648E9 /* UIButton+ImageTitleSpacing.m in Sources */,
 				B6E26A9D201AF3F2006C7650 /* BaseNavigationController.m in Sources */,
 				B6E26AA1201AF3F2006C7650 /* BaseModel.m in Sources */,
+				B66110832045504700D648E9 /* BaseTabBarController.m in Sources */,
 				B6E26A9E201AF3F2006C7650 /* BaseView.m in Sources */,
 				B6E26A6C201AF2A0006C7650 /* main.m in Sources */,
 				B6E26A9C201AF3F2006C7650 /* HDJEmptyView.m in Sources */,

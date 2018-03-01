@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    BaseTabBarController *tabbarController = [[BaseTabBarController alloc] init];
+    // 设置根视图
+    self.window.rootViewController = tabbarController;
+
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
