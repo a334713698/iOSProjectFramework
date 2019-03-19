@@ -9,6 +9,6 @@
 #ifndef HDJGlobalVariables_h
 #define HDJGlobalVariables_h
 
-/** 统一管理局部宏 */
+/** 统一管理全局变量 */
 
 #endif /* HDJGlobalVariables_h */
